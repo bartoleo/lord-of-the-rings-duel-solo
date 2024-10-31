@@ -1,0 +1,386 @@
+@import "@fortawesome/fontawesome-free/css/all.min.css";
+
+:root {
+  font-family: Inter, Avenir, Helvetica, Arial, sans-serif;
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 400;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-text-size-adjust: 100%;
+}
+
+a {
+  font-weight: 500;
+  color: #646cff;
+  text-decoration: inherit;
+}
+a:hover {
+  color: #535bf2;
+}
+
+a {
+  font-weight: 500;
+  color: #646cff;
+  text-decoration: inherit;
+}
+a:hover {
+  color: #535bf2;
+}
+
+body {
+  margin: 0;
+}
+
+h1 {
+  position: fixed;
+  font-size: 40px;
+  line-height: 1.1;
+  top: 0px;
+  background-color: white;
+  border-bottom: 1px solid #333;
+}
+
+.new-game-buttons button{
+  margin: 5px;
+}
+
+#app {
+  margin: 0 auto;
+  text-align: center;
+}
+
+.fade-out {
+  transition: opacity 0.3s;
+  opacity: 0;
+}
+
+.fade-in {
+  transition: opacity 0.3s;
+  opacity: 1;
+} 
+
+.cardLeaderWrapper {
+  overflow: hidden;
+}
+
+.cardWrapper {
+  overflow: hidden;
+}
+
+.turn-order-played-container .cardEEWrapper:not(:last-child) {
+  zoom: 66%;
+}
+
+.leader-choice {
+  display: flex;
+  flex-flow: row wrap;
+  /* This aligns items to the end line on main-axis */
+  justify-content: center;
+}
+
+.cardLeaderWrapper:last-child,
+.cardLeaderWrapper:hover {
+  overflow: visible;
+}
+
+.clickable{
+  cursor: pointer;
+}
+
+.cardLeader {
+  width: 12em;
+  min-width: 12em;
+  height: 18.7em;
+  border-radius: 0.5em;
+  border-style: solid;
+  border-color: white;
+  border-width: 2px;
+  background-color: black;
+  padding: 0.25em;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-size: cover;
+}
+
+.cardLeader-1 {
+  background-image: url(assets/leader-1.png);
+}
+.cardLeader-2 {
+  background-image: url(assets/leader-2.png);
+}
+.cardLeader-3 {
+  background-image: url(assets/leader-3.png);
+}
+.cardLeader-4 {
+  background-image: url(assets/leader-4.png);
+}
+.cardLeader-5 {
+  background-image: url(assets/leader-5.png);
+}
+.cardLeader-6 {
+  background-image: url(assets/leader-6.png);
+}
+.cardLeader-7 {
+  background-image: url(assets/leader-7.png);
+}
+.cardLeader-8 {
+  background-image: url(assets/leader-8.png);
+}
+.cardLeader-9 {
+  background-image: url(assets/leader-9.png);
+}
+
+
+.cardAutoma{
+  width: 14em;
+  min-width: 14em;
+  height: 9.2em;
+  border-radius: 0.5em;
+  border-style: solid;
+  border-color: white;
+  border-width: 2px;
+  background-color: black;
+  padding: 0.25em;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-image: url(assets/card-back.png);
+  background-size: cover;
+}
+
+.cardAutoma-1 {
+  background-image: url(assets/card-1.png);
+}
+
+.cardAutoma-2 {
+  background-image: url(assets/card-2.png);
+}
+
+.cardAutoma-3 {
+  background-image: url(assets/card-3.png);
+}
+
+.cardAutoma-4 {
+  background-image: url(assets/card-4.png);
+}
+
+.cardAutoma-5 {
+  background-image: url(assets/card-5.png);
+}
+
+.cardAutoma-6 {
+  background-image: url(assets/card-6.png);
+}
+
+.cardAutoma-7 {
+  background-image: url(assets/card-7.png);
+}
+
+.cardAutoma-8 {
+  background-image: url(assets/card-8.png);
+}
+
+.cardAutoma-9 {
+  background-image: url(assets/card-9.png);
+}
+
+.cardAutoma-10 {
+  background-image: url(assets/card-10.png);
+}
+
+.cardAutoma-11 {
+  background-image: url(assets/card-11.png);
+}
+
+.cardAutoma-12 {
+  background-image: url(assets/card-12.png);
+}
+
+.gameCardsContainer{
+  display: flex;
+  flex-flow: row wrap;
+  /* This aligns items to the end line on main-axis */
+  justify-content: center;
+}
+
+.gameCardsContainer .cardLeader {
+  min-width: unset;
+  max-width: unset;
+  width: calc(90vw * 5 / 12);
+  height: calc(100vh - 200px);
+  -o-object-fit: contain;
+  object-fit: contain;
+  aspect-ratio: 1;
+  background-position-x: right;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-color: white;
+}
+.gameCardsContainer .cardAutoma {
+  min-width: unset;
+  max-width: unset;
+  width: calc(90vw * 7 / 12);
+  height: calc(100vh - 200px);
+  -o-object-fit: contain;
+  object-fit: contain;
+  aspect-ratio: 1;
+  background-position-x: left;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-color: white;
+  position: relative;
+}
+
+
+.leader-choice .cardLeader:hover {
+  border-color: yellow;
+}
+.cardLeader:focus,
+.cardLeader:focus-visible {
+  outline: 4px auto -webkit-focus-ring-color;
+}
+
+.navbar{
+  border-bottom: 1px solid black;
+}
+
+.game-button {
+  margin: 10px;
+}
+
+.game-button:disabled {
+  opacity: 30% !important;
+}
+
+.new-game-info{
+  margin: 10px;
+  font-weight: bold;
+}
+
+.header-small{
+  font-size: 80%;
+}
+
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type=number] {
+  -moz-appearance: textfield;
+}
+
+.game-button-bar button{
+  margin-left: 2px;
+}
+
+.game-button-bar button.btn-primary-outline{
+  color: white;
+}
+
+
+.icon-crossed {
+  position: relative;
+}
+.icon-crossed:after {
+  position: absolute;
+  content: "/";
+  color: white;
+  font-weight: 700;
+  font-size: 1.7em;
+  left: 5px;
+  top: -7px;
+}
+
+.audioVolume-slider{
+  width: 200px;
+}
+
+@media only screen and (max-width: 600px) {
+  .navbar{
+    zoom: 50%;
+  }
+
+  .game-button{
+    zoom: 110%;
+  }
+
+  .leader-choice .cardLeader{
+    width: 9em;
+    min-width: 9em;
+    height: 10.5em;
+  }
+
+}
+
+@media only screen and (max-width: 800px) {
+  .navbar{
+    zoom: 75%;
+  }
+
+  .game-button{
+    zoom: 110%;
+  }
+
+  .leader-choice .cardLeader{
+    width: 9em;
+    min-width: 9em;
+    height: 14em;
+  }
+
+}
+
+.debug{
+  display: none;
+  visibility: hidden;
+}
+.debugEnabled .debug{
+  display: revert;
+  visibility: visible;
+}
+
+.img-rules{
+  width: 100%;
+  object-fit: cover;
+}
+
+@media only screen and (min-width: 1000px) {
+  .img-rules{
+    width: 1000px;
+  }
+
+}
+
+.blink_me {
+  animation: blinker 1s linear infinite;
+}
+
+@keyframes blinker {
+  50% {
+    opacity: 0;
+  }
+}
+
+.double-turn{
+  position: absolute;
+  font-weight: bold;
+  left: 20px;
+  bottom: 20px;
+  background-color: rgba(255,255,255,0.5);
+  border-radius: 5px;
+}
+
+.double-turn .text{
+  font-weight: bold;
+  padding: 2px 5px 2px 5px;
+}
