@@ -44,11 +44,11 @@ onMounted(() => {
 
   currentPath.value = window.location.hash;
   window.addEventListener('hashchange', () => {
-    document.getElementById("app").classList.remove('fade-in');
-    document.getElementById("app").classList.add('fade-out');
+    document.getElementById("app").classList.remove('page-fade-in');
+    document.getElementById("app").classList.add('page-fade-out');
     setTimeout(function(){
-      document.getElementById("app").classList.remove('fade-out');
-      document.getElementById("app").classList.add('fade-in');
+      document.getElementById("app").classList.remove('page-fade-out');
+      document.getElementById("app").classList.add('page-fade-in');
       currentPath.value = window.location.hash;
     }, 300);
   });

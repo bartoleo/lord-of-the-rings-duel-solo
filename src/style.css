@@ -53,12 +53,22 @@ h1 {
   text-align: center;
 }
 
-.fade-out {
+.page-fade-out {
   transition: opacity 0.3s;
   opacity: 0;
 }
 
-.fade-in {
+.page-fade-in {
+  transition: opacity 0.3s;
+  opacity: 1;
+} 
+
+.card-fade-out {
+  transition: opacity 0.3s;
+  opacity: 0;
+}
+
+.card-fade-in {
   transition: opacity 0.3s;
   opacity: 1;
 } 
@@ -375,14 +385,15 @@ input[type=number] {
   position: absolute;
   font-weight: bold;
   left: 20px;
-  bottom: 20px;
+  top: 20px;
+  font-size: 20px;
   background-color: rgba(255,255,255,0.5);
   border-radius: 5px;
 }
 
 .double-turn .text{
   font-weight: bold;
-  padding: 2px 5px 2px 5px;
+  padding: 5px 8px 5px 8px;
 }
 
 .dice-value{

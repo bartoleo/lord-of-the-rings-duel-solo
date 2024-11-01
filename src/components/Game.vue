@@ -12,6 +12,7 @@ const audio = ref(store.audio);
 const leader = store.leader;
 const doubleTurn = ref(false);
 const viewHistory = ref(store.viewHistory);
+let currentCardCssClass = ref('');
 
 const diceValueSymbol = computed(() => {
   switch (store.diceValue) {
@@ -75,7 +76,10 @@ const shuffleDeck = (draw) => {
   if (!historyNew){
     historyNew = []
   }
-  historyNew.push(-1);
+  // don't add to history first shuffle
+  if (store.turn>0){
+    historyNew.push(-1);
+  }
   
   store.setValues({
     currentCard: 0,
@@ -103,33 +107,46 @@ const shuffleDeck = (draw) => {
 };
 
 const drawCard = (playAudio) => {
-  let currentCard = store.deck[0];
+
+  currentCardCssClass.value = "card-fade-out";
   
-  let newDeck = store.deck;
-  newDeck = newDeck.splice(1, newDeck.length - 1);
-  
-  let newDiscardDeck = store.discardDeck;
-  if (store.currentCard>0){
-    newDiscardDeck.push(store.currentCard);
-  } 
-  
-  let turn = store.turn;
-  turn++;
-  
-  let historyNew = store.history;
-  if (!historyNew){
-    historyNew = []
-  }
-  historyNew.push(currentCard);
-  
-  store.setValues({
-    turn: turn,
-    deck: newDeck,
-    discardDeck: newDiscardDeck,
-    currentCard: currentCard,
-    history: historyNew
-  });
-  
+  setTimeout(function(){
+      
+    let currentCard = store.deck[0];
+    
+    let newDeck = store.deck;
+    newDeck = newDeck.splice(1, newDeck.length - 1);
+    
+    let newDiscardDeck = store.discardDeck;
+    if (store.currentCard>0){
+      newDiscardDeck.push(store.currentCard);
+    } 
+    
+    let turn = store.turn;
+    turn++;
+    
+    let historyNew = store.history;
+    if (!historyNew){
+      historyNew = []
+    }
+    historyNew.push(currentCard);
+    
+    currentCardCssClass.value = "card-fade-in";
+
+    store.setValues({
+      turn: turn,
+      deck: newDeck,
+      discardDeck: newDiscardDeck,
+      currentCard: currentCard,
+      history: historyNew
+    });
+        
+    launchDice(false);
+    
+    recalculateValues();
+
+  }, 300);
+    
   try {
     if (playAudio && store.audio){
       const audioFile = new Audio('sounds/draw.wav');
@@ -140,8 +157,6 @@ const drawCard = (playAudio) => {
     //do nothing
     console.error(ex);
   }
-  
-  launchDice(false);
   
   recalculateValues();
   
@@ -327,7 +342,7 @@ onMounted(() => {
     </div>
     
     <div class="cardWrapper">
-      <div  v-bind:class="'cardAutoma cardAutoma-'+store.currentCard">
+      <div  v-bind:class="'cardAutoma cardAutoma-'+store.currentCard+' '+currentCardCssClass">
         <span v-if="doubleTurn" class="double-turn blink_me"><span class="text">The bot takes another turn after this</span></span>
       </div> 
       <div class="debug">{{ store.currentCard }}</div>
