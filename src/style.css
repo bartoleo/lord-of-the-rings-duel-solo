@@ -384,3 +384,37 @@ input[type=number] {
   font-weight: bold;
   padding: 2px 5px 2px 5px;
 }
+
+.dice-value{
+  font-size: 20px;
+}
+
+.history-cards{
+  display: flex;
+  flex-flow: row wrap;
+  /* This aligns items to the end line on main-axis */
+  justify-content: left;
+}
+
+.history-shuffled{
+    width: 14em;
+    min-width: 14em;
+    height: 9.2em;
+    border-radius: 0.5em;
+    border-style: solid;
+    border-color: white;
+    border-width: 2px;
+    background-color: #f0f0f0;
+    padding: 0.25em;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.deck-container{
+  display: flex;
+  flex-flow: row wrap;
+  /* This aligns items to the end line on main-axis */
+  justify-content: center;
+}

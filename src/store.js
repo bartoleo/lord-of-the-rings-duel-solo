@@ -9,6 +9,9 @@ export const store = reactive({
   discardDeck: [],
   audio: true,
   audioVolume: 0.5,
+  viewHistory: false,
+  diceValue: 0,
+  history: [],
   reset() {
     this.setValues({
       initialized: false,
@@ -17,6 +20,8 @@ export const store = reactive({
       currentCard: 0,
       deck: [],
       discardDeck: [],
+      diceValue: 0,
+      history: []
     });
   },
   load() {

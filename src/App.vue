@@ -7,6 +7,7 @@ import Game from './components/Game.vue';
 import Config from './components/Config.vue';
 import Effects from './components/Effects.vue';
 import RaceEffects from './components/RaceEffects.vue';
+import Deck from './components/Deck.vue';
 import NotFound from './components/NotFound.vue';
 
 const routes = {
@@ -15,6 +16,7 @@ const routes = {
   '/config': Config,
   '/effects': Effects,
   '/raceEffects': RaceEffects,
+  '/deck': Deck,
   //'/about': About,
 };
 
