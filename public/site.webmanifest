@@ -1,1 +1,25 @@
-{"name":"","short_name":"","icons":[{"src":"/android-chrome-192x192.png","sizes":"192x192","type":"image/png"},{"src":"/android-chrome-512x512.png","sizes":"512x512","type":"image/png"}],"theme_color":"#ffffff","background_color":"#ffffff","display":"standalone"}
+{
+    "icons": [
+      {
+        "src": "/android-chrome-192x192.png",
+        "sizes": "192x192",
+        "type": "image/png"
+      },
+      {
+        "src": "/android-chrome-512x512.png",
+        "sizes": "512x512",
+        "type": "image/png"
+      }
+    ],
+    "theme_color": "#ffffff",
+    "background_color": "#ffffff",
+    "display": "standalone",
+    "name": "LOTR : Duel for Middle-earth Unofficial Automa",
+    "short_name": "LOTR : Duel for Middle-earth Unofficial Automa",
+    "id": "1",
+    "description": "LOTR : Duel for Middle-earth - UNOFFICIAL SOLO VARIANT by Tommaso Martinoli",
+    "start_url": "https://lotr-duel-automa.netlify.app/",
+    "dir": "ltr",
+    "lang": "en",
+    "orientation": "any"
+  }

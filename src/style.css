@@ -119,31 +119,31 @@ h1 {
 }
 
 .cardLeader-1 {
-  background-image: url(assets/leader-1.png);
+  background-image: url(./assets/leader-1.png);
 }
 .cardLeader-2 {
-  background-image: url(assets/leader-2.png);
+  background-image: url(./assets/leader-2.png);
 }
 .cardLeader-3 {
-  background-image: url(assets/leader-3.png);
+  background-image: url(./assets/leader-3.png);
 }
 .cardLeader-4 {
-  background-image: url(assets/leader-4.png);
+  background-image: url(./assets/leader-4.png);
 }
 .cardLeader-5 {
-  background-image: url(assets/leader-5.png);
+  background-image: url(./assets/leader-5.png);
 }
 .cardLeader-6 {
-  background-image: url(assets/leader-6.png);
+  background-image: url(./assets/leader-6.png);
 }
 .cardLeader-7 {
-  background-image: url(assets/leader-7.png);
+  background-image: url(./assets/leader-7.png);
 }
 .cardLeader-8 {
-  background-image: url(assets/leader-8.png);
+  background-image: url(./assets/leader-8.png);
 }
 .cardLeader-9 {
-  background-image: url(assets/leader-9.png);
+  background-image: url(./assets/leader-9.png);
 }
 
 
@@ -161,56 +161,56 @@ h1 {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background-image: url(assets/card-back.png);
+  background-image: url(./assets/card-back.png);
   background-size: cover;
 }
 
 .cardAutoma-1 {
-  background-image: url(assets/card-1.png);
+  background-image: url(./assets/card-1.png);
 }
 
 .cardAutoma-2 {
-  background-image: url(assets/card-2.png);
+  background-image: url(./assets/card-2.png);
 }
 
 .cardAutoma-3 {
-  background-image: url(assets/card-3.png);
+  background-image: url(./assets/card-3.png);
 }
 
 .cardAutoma-4 {
-  background-image: url(assets/card-4.png);
+  background-image: url(./assets/card-4.png);
 }
 
 .cardAutoma-5 {
-  background-image: url(assets/card-5.png);
+  background-image: url(./assets/card-5.png);
 }
 
 .cardAutoma-6 {
-  background-image: url(assets/card-6.png);
+  background-image: url(./assets/card-6.png);
 }
 
 .cardAutoma-7 {
-  background-image: url(assets/card-7.png);
+  background-image: url(./assets/card-7.png);
 }
 
 .cardAutoma-8 {
-  background-image: url(assets/card-8.png);
+  background-image: url(./assets/card-8.png);
 }
 
 .cardAutoma-9 {
-  background-image: url(assets/card-9.png);
+  background-image: url(./assets/card-9.png);
 }
 
 .cardAutoma-10 {
-  background-image: url(assets/card-10.png);
+  background-image: url(./assets/card-10.png);
 }
 
 .cardAutoma-11 {
-  background-image: url(assets/card-11.png);
+  background-image: url(./assets/card-11.png);
 }
 
 .cardAutoma-12 {
-  background-image: url(assets/card-12.png);
+  background-image: url(./assets/card-12.png);
 }
 
 .gameCardsContainer{

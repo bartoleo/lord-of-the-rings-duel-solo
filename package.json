@@ -19,7 +19,10 @@
     "vue": "^3.2.37"
   },
   "devDependencies": {
+    "@vite-pwa/assets-generator": "^0.2.6",
     "@vitejs/plugin-vue": "^3.0.3",
-    "vite": "^3.0.9"
+    "fast-glob": "^3.3.2",
+    "vite": "^3.0.9",
+    "vite-plugin-pwa": "^0.20.5"
   }
 }
