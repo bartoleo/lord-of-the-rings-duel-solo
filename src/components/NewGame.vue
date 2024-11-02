@@ -67,9 +67,9 @@ const count = ref(0);
 
   <div class="card">
     <div class="card-body new-game-info" >
-      This app is based upon <a href="https://boardgamegeek.com/filepage/287485/lotr-duel-for-middle-earth-unofficial-solo-variant" target="_blank">UNOFFICIAL SOLO VARIANT</a> by <a href="https://boardgamegeek.com/user/Tommaso_Martinoli" target="_blank">Tommaso Martinoli</a>
+      This app is based upon <a href="https://boardgamegeek.com/thread/3380821/solo-mode-fan-made-completed" target="_blank">UNOFFICIAL SOLO VARIANT</a> by <a href="https://boardgamegeek.com/user/Tommaso_Martinoli" target="_blank">Tommaso Martinoli</a>
       <br/>
-      Version 1.3
+      <a href="https://boardgamegeek.com/filepage/287485/lotr-duel-for-middle-earth-unofficial-solo-variant" target="_blank">Rules and cards PDF File</a> Version 1.3
     </div> 
   </div>
 
